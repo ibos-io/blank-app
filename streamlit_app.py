@@ -36,7 +36,7 @@ def none(img):
     img = preprocess(img)
     return img
 
-picture = st.camera_input("First, take a picture...")
+#picture = st.camera_input("First, take a picture...")
 
 filters_to_funcs = {
     "No filter": none,
@@ -44,7 +44,7 @@ filters_to_funcs = {
     "Invert": invert,
     "Sketch": sketch,
 }
-filters = st.selectbox("...and now, apply a filter!", filters_to_funcs.keys())
+#filters = st.selectbox("...and now, apply a filter!", filters_to_funcs.keys())
 
-if picture:
-    st.image(filters_to_funcs[filters](picture), channels="BGR")
+#if picture:
+#   st.image(filters_to_funcs[filters](picture), channels="BGR")
